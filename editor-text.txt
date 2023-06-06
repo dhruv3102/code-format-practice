@@ -1,0 +1,99 @@
+EditorConfig
+
+Universal vs. Domain-Specific
+
+Universal properties are those which can have a meaning for nearly every file format.
+Domain-specific properties are those which may not be meaningful for some file formats.
+
+Properties
+---------------------------------------------Universal-------------------------------------------------------------------------
+indent_style
+Possible Values
+tab
+space
+
+indent_size - (Indentation Size (in single-spaced characters))
+Possible Values
+an integer
+tab
+
+tab_width - (Width of a single tabstop character)
+Possible Values
+a positive integer (defaults indent_size when indent_size is a number)
+
+end_of_line - (Line ending file format (Unix, DOS, Mac))
+Possible Values
+lf
+crlf
+cr
+
+charset - File character encoding (See Character Set Support.)
+Possible Values
+latin1
+utf-8
+utf-16be
+utf-16le
+utf-8-bom
+
+trim_trailing_whitespace (Denotes whether whitespace is removed from the end of lines)
+Possible Values
+true: remove any whitespace characters preceding newline characters
+false: ensure the editor keeps whitespace characters
+
+insert_final_newline
+Denotes whether file should end with a newline
+Possible Values
+true
+false
+
+max_line_length (Forces hard line wrapping after the amount of characters specified. off to turn off this feature (use the editor settings)).
+Possible Values
+positive integers
+off
+
+
+--------------------------------Domain Specific-------------------------------------------------------
+The following properties are not intended to be implemented by EditorConfig.
+This is simply a brainstorm of domain-specific properties that could be supported by some tools that rely on EditorConfig files
+
+=> Property
+
+quote_type	
+(single, double, auto	)
+Denotes preferred quoting style for string literals (for languages that support multiple quote styles)	with multiple equivalent string literal quote types
+
+c_include_path	
+(Directory paths separated by colon (:)	)
+Denotes the include paths of header files for some languages. Could be used by syntax checkers and compilers inside editors.	C-family languages (such as C, C++, D, Objective-C, etc.)
+
+java_class_path	
+(Paths separated by colon (:))	
+Denotes the CLASSPATH used by the Java source files. Could be used by some Java syntax checkers and compilers inside editors.	Java
+
+curly_bracket_next_line	
+(true, false)	
+Denotes whether the left part of the curly bracket should be on the next line or not	C-family languages (such as C, C++, Java, Javascript, etc.)
+
+spaces_around_operators	
+(true, false, hybrid)
+Denotes whether spaces should be present around arithmetic and boolean operators	with infix operators and optional spaces
+
+spaces_around_brackets	
+(none, inside, outside, both)	
+Denotes how spaces should be around brackets and parentheses: no space, only inside the brackets, only outside the brackets, or at the both side of brackets	
+
+indent_brace_style	
+(K&R, Allman, GNU, Horstmann, etc.)	
+Denotes the style for using curly braces in code blocks	C-family languages (such as C, C++, Java, Javascript, etc.) with code blocks using curly braces
+
+wildcard_import_limit	
+(int)	
+Denotes the number of imports required before multiple imports are automatically collapsed to a wildcard (or a wildcard is automatically expanded to explicit imports)	Java etc. (Eclipse and IDEA already have the core functionality)
+
+continuation_indent_size	
+(unsigned integer)	
+Denotes the continuation indent size. Useful to distinguish code blocks versus continuation lines	Python, JetBrains (IntelliJ IDEA), Netbeans (JSON, PHP, Java)
+
+block_comment, line_comment, block_comment_start, block_comment_end	
+(char)	
+Denotes the block_comment or line_comment character to mark a block or each line as comment. Some languages require # prepended on each line, others // or ;. Some have specific block start markers and end markers such as /* and */ and <!-- and --!>
