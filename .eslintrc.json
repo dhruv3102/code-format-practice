@@ -30,7 +30,24 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "no-console": "error",
+        "no-debugger": "error",
+        "no-empty-function": "error",
+        "no-dupe-args": "error",
+        "no-duplicate-imports": "error",
+        "no-alert": "error",
+        "eqeqeq":"error",
+        "space-before-blocks":["error",
+          {
+          "functions":"always",
+          "classes":"always"
+          }
+        ],
+        "custom-angular-rule": "error"
       }
     },
     {
@@ -40,7 +57,12 @@
       "extends": [
         "plugin:@angular-eslint/template/recommended"
       ],
-      "rules": {}
+      "rules": {
+        "@angular-eslint/template/no-duplicate-attributes": "error",
+        "@angular-eslint/template/no-call-expression": "error", 
+        "@angular-eslint/template/no-negated-async": "error",
+        "@angular-eslint/template/accessibility-elements-content": "error"
+      }
     }
   ]
 }

@@ -1,13 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.sass']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 	title = 'sample-project';
-	ngOnInit(): void {
-		console.log('hello');
+	isResolved = true;
+	id: number;
+	contactList = ['9878817969', '9008788111', '7415209630'];
+
+	validate(isResolved: boolean): void {
+		//return final value after concat with previous value
+		const _x = 1;
+		const _status = isResolved + 'Updated';
+	}
+
+	addInformation(): string {
+		// returning string value
+		return 'Information';
 	}
 }

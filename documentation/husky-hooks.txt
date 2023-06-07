@@ -1,0 +1,17 @@
+pre-commit: 
+This hook runs before a commit is made. It's commonly used for tasks like linting code, running static analysis tools, or checking for any potential issues that could be caught before committing.
+
+commit-msg: 
+This hook is triggered after entering a commit message but before the commit is finalized. It can be used to enforce commit message conventions or perform additional checks on the commit message.
+
+pre-push: 
+This hook runs before a push to a remote repository is executed. It's often used for running tests, ensuring the codebase is in a good state before pushing changes, or preventing certain actions based on pre-defined criteria.
+
+prepare-commit-msg: 
+This hook is executed before the commit message is presented to the user. It allows for dynamic modification or pre-filling of the commit message based on specific conditions or project requirements.
+
+post-commit: 
+This hook runs after a commit is completed. It can be used for tasks like triggering notifications, updating documentation, or performing other actions that should happen after a successful commit.
+
+post-merge: 
+This hook is triggered after a successful merge operation. It can be used to perform tasks such as updating dependencies, rebuilding project configurations, or any other actions required after merging changes.
