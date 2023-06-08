@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
 	templateUrl: './login-page.component.html',
 	styleUrls: ['./login-page.component.sass']
 })
-export class LoginPageComponent {}
+export class LoginPageComponent {
+	title = 'Login-Page';
+
+	getCurrentTime(): string {
+		//
+		return 'time';
+	}
+}
