@@ -14,4 +14,9 @@ export class HomePageComponent {
 		// return contact
 		return this.contactList['mobile'];
 	}
+
+	getAddres(): void {
+		// address
+		const _street = 'Downtown';
+	}
 }

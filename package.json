@@ -15,7 +15,8 @@
 	},
 	"lint-staged": {
     "src/**/*.{ts,html,json}": [
-      "npm run lint-format"
+      "npx eslint --fix --rulesdir rules",
+	  "npx prettier --write"
     ]
 	},
 	"husky": {
