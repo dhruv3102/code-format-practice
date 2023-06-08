@@ -14,7 +14,7 @@
 		"prepare": "husky install"
 	},
 	"lint-staged": {
-    "src/**/*.{js,ts,html,css,scss,json}": [
+    "src/**/*.{ts,html,json}": [
       "npm run lint-format"
     ]
 	},
