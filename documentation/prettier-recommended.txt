@@ -19,3 +19,19 @@ Auto Generated while installing prettier and of them were added
     "proseWrap": "preserve",
     "quoteProps": "as-needed",
   }
+
+For HTML:------------------
+"printWidth": 120: Sets the maximum line width to 120 characters.
+"tabWidth": 2: Sets the tab width to 2 spaces.
+"singleQuote": true: Enforces the use of single quotes for attribute values.
+"attributeWrapping": "always": Ensures that attributes are always wrapped onto multiple lines.
+"htmlWhitespaceSensitivity": "css": Determines the handling of HTML whitespace. Options include "css" (follows CSS rules), "strict" (all whitespace is considered sensitive), and "ignore" (all whitespace is considered insignificant).
+"endOfLine": "auto": Defines the line ending style. Options include "auto" (maintains the line endings of the file), "lf" (line feed), and "crlf" (carriage return followed by line feed).
+
+For TypeScript:--------------
+"printWidth": 120: Sets the maximum line width to 120 characters.
+"tabWidth": 2: Sets the tab width to 2 spaces.
+"singleQuote": true: Enforces the use of single quotes for string literals.
+"trailingComma": "all": Adds trailing commas wherever possible.
+"arrowParens": "avoid": Opts to omit parentheses when possible for arrow function parameters.
+
