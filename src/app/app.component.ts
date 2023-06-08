@@ -12,7 +12,7 @@ export class AppComponent {
 	contactList = ['9878817969', '9008788111', '7415209630'];
 
 	validate(isResolved: boolean): void {
-		//return finnal value after concat with previous value
+		//return final value after concat with previous value
 		const _x = 1;
 		const _status = isResolved + 'Updated';
 	}
