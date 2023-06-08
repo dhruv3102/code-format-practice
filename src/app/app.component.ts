@@ -18,7 +18,13 @@ export class AppComponent {
 	}
 
 	addInformation(): string {
-		// returning string value
+		// return string value
 		return 'Information';
+	}
+
+	login(): number {
+		// return age
+		const age = 10;
+		return age;
 	}
 }
