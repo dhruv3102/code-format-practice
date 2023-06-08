@@ -18,7 +18,7 @@ export class AppComponent {
 	}
 
 	addInformation(): string {
-		// returning string value
+		// returning string valu
 		return 'Information';
 	}
 }

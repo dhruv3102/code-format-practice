@@ -10,17 +10,17 @@
 		"lint-format": "npm run lint && npm run format",
 		"lint": "npx eslint --fix src/**/*.{js,ts,html} --rulesdir rules",
 		"format": "npx prettier --write src/**/*.{js,ts,html,css,scss,json}",
-		"lint-staged": "lint-staged",
+		"lint-staged": "npx lint-staged",
 		"prepare": "husky install"
 	},
 	"lint-staged": {
-		"*.{js,jsx}": "eslint --fix",
-		"*.{css,scss}": "stylelint --fix",
-		"*.{json,md}": "prettier --write"
+    "src/**/*.{js,ts,html,css,scss,json}": [
+      "npm run lint-format"
+    ]
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run lint-staged"
+			"pre-commit": "git add . && npm run lint-staged 'Committed to branch'"
 		}
 	},
 	"private": true,
