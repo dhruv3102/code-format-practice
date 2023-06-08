@@ -1,0 +1,21 @@
+--------Prettier Rules----------
+-----TypeScript
+https://prettier.io/docs/en/configuration.html
+https://prettier.io/docs/en/options.html
+
+Auto Generated while installing prettier and of them were added
+{
+    "semi": true,
+    "tabWidth": 2,
+    "useTabs": false,
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "arrowParens": "always",
+    "bracketSameLine": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "ignore"
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+  }
