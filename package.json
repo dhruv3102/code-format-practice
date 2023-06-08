@@ -20,7 +20,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "git add . && npm run lint-staged 'Committed to branch'"
+			"pre-commit": "npm run lint-staged 'Committed to branch'"
 		}
 	},
 	"private": true,
