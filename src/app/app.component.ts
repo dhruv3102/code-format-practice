@@ -14,11 +14,13 @@ export class AppComponent {
 	validate(isResolved: boolean): void {
 		//return finnal value after concat with previous value
 		const _x = 1;
+
 		const _status = isResolved + 'Updated';
 	}
 
 	addInformation(): string {
 		// returning string value
+
 		return 'Information';
 	}
 }
